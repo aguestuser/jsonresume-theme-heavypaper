@@ -36,6 +36,38 @@
 			            {{name}}
 			          </p>
 			          <p class="subtitle">{{label}}</p>
+
+			          {{#resume.basics}}
+						      <!-- PROFILES -->
+						      {{#if profiles.length}}
+						      	<p class="subtitle">
+						      		{{#each profiles}}
+					            	{{#if network}}
+					            		{{#if $first}}
+					              		<a href="{{url}}" target="_blank">{{network}}</a>
+					              	{{else}}
+					              		 | <a href="{{url}}" target="_blank">{{network}}</a>
+					              	{{/if}}
+					              {{/if}}
+					            {{/each}}
+						      	</p>
+						      {{/if}}
+								{{/resume.basics}}
+
+							      <section class="content profiles">
+							        <div class="row">
+							          <div class="content-cat">
+							           Profiles
+							          </div>
+							          <div class="content-text profiles-listing">
+							            <ul>
+								            
+							            </ul>
+							          </div>
+							        </div>
+							      </section>
+						      
+
 			        </div>
 			      </div>
 			    </header>
@@ -141,32 +173,6 @@
 			      </section>
 			      {{/if}}
 
-					{{#resume.basics}}
-			      <!-- PROFILES -->
-			      {{#if profiles.length}}
-				      <section class="content profiles">
-				        <div class="row">
-				          <div class="content-cat">
-				           Profiles
-				          </div>
-				          <div class="content-text profiles-listing">
-				            <ul>
-					            {{#each profiles}}
-					            	{{#if network}}
-					              	<li>
-					              	<a href="{{url}}" target="_blank">
-							                	{{network}}
-							                </a>
-							            </li>
-					              {{/if}}
-					            {{/each}}
-				            </ul>
-				          </div>
-				        </div>
-				      </section>
-			      {{/if}}
-					{{/resume.basics}}
-
 					{{#if resume.work.length}}
 						{{#foreach resume.work}}
 						{{#if $first}}
@@ -176,15 +182,11 @@
           	{{/if}}
 			        <div class="row">
 		          	{{#if $first}}
-										<div class="content-cat big-text">Work	Experience</div>
+										<div class="content-cat big-text">Work Experience</div>
 		          	{{/if}}
 			          <div class="content-text work-listing education-listing">
 										{{#ifCond company '&&' position}}
-										{{#if $first}}
-					            <p style="margin-top:2.4em;">
-					            {{else}}
-					            <p>
-					          {{/if}}
+						          <p>
 					            	{{#if website}}
 													<strong>{{position}}</strong> at <strong><a href="{{website}}">{{company}}</a></strong>
 												{{else}}
@@ -265,11 +267,7 @@
 									{{/if}}
 				          <div class="content-text work-listing education-listing">
 										{{#if institution}}
-											{{#if $first}}
-						            <p class="heading" style="margin-top:2.35em;">{{institution}}
-						          {{else}}
-						            <p class="heading">{{institution}}
-						          {{/if}}
+											<p class="heading">{{institution}}
 
 						          {{#if startDate}}
 												{{#if endDate}}
