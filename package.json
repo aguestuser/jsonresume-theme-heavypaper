@@ -1,0 +1,25 @@
+{
+  "name": "jsonresume-theme-heavypaper",
+  "version": "0.1.0",
+  "description": "A theme for JSON Resume",
+  "author": "John Hurliman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhurliman/jsonresume-theme-heavypaper"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4"
+  },
+  "homepage": "https://github.com/jhurliman/jsonresume-theme-heavypaper",
+  "main": "index.js",
+  "scripts": {
+    "start": "resume serve"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "jsonresume",
+    "json",
+    "resume"
+  ]
+}
