@@ -251,7 +251,7 @@
 									{{/if}}
 				          <div class="content-text work-listing education-listing">
 										{{#if institution}}
-											<p class="heading">{{institution}}
+											<p><strong>{{institution}}</strong>
 
 						          {{#if startDate}}
 												{{#if endDate}}
