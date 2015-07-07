@@ -171,6 +171,7 @@ body > div > article > div > section:last-child {
 }
 
 .content-cat p {
+  font-family: "Open Sans";
   font-size:0.55em;
   font-weight:600;
   
