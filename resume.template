@@ -40,11 +40,15 @@
 					      <!-- PROFILES -->
 					      {{#if profiles.length}}
 					      	<p class="subtitle">
-					      		{{#each profiles}}
+					      		{{#foreach profiles}}
 				            	{{#if network}}
-				            		<a href="{{url}}" target="_blank">{{network}}</a>
+				            		{{#if $first}}
+				              		<a href="{{url}}" target="_blank">{{network}}</a>
+				              	{{else}}
+				              		 | <a href="{{url}}" target="_blank">{{network}}</a>
+				              	{{/if}}
 				              {{/if}}
-				            {{/each}}
+				            {{/foreach}}
 					      	</p>
 					      {{/if}}
 
