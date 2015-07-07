@@ -179,7 +179,7 @@
 
 					            	{{#if startDate}}
 													{{#if endDate}}
-						            		{{startDate}} till {{endDate}}
+						            		 ({{startDate}} till {{endDate}})
 						            	{{/if}}
 												{{/if}}
 					            </p>
@@ -255,7 +255,7 @@
 
 						          {{#if startDate}}
 												{{#if endDate}}
-					            		{{startDate}} till {{endDate}}
+					            		 ({{startDate}} till {{endDate}})
 					            	{{/if}}
 											{{/if}}
 
