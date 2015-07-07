@@ -27,7 +27,7 @@
 			    <header>
 			      <div class="header-content">
 			      	{{#if picture}}
-			        <div class="header-pic" title="Wiggle Wiggle">
+			        <div class="header-pic">
 			          <img src="{{picture}}" class="pic" />
 			        </div>
 			        {{/if}}
