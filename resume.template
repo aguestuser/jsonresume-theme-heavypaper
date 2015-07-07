@@ -37,36 +37,20 @@
 			          </p>
 			          <p class="subtitle">{{label}}</p>
 
-			          {{#resume.basics}}
-						      <!-- PROFILES -->
-						      {{#if profiles.length}}
-						      	<p class="subtitle">
-						      		{{#each profiles}}
-					            	{{#if network}}
-					            		{{#if $first}}
-					              		<a href="{{url}}" target="_blank">{{network}}</a>
-					              	{{else}}
-					              		 | <a href="{{url}}" target="_blank">{{network}}</a>
-					              	{{/if}}
-					              {{/if}}
-					            {{/each}}
-						      	</p>
-						      {{/if}}
-								{{/resume.basics}}
-
-							      <section class="content profiles">
-							        <div class="row">
-							          <div class="content-cat">
-							           Profiles
-							          </div>
-							          <div class="content-text profiles-listing">
-							            <ul>
-								            
-							            </ul>
-							          </div>
-							        </div>
-							      </section>
-						      
+					      <!-- PROFILES -->
+					      {{#if profiles.length}}
+					      	<p class="subtitle">
+					      		{{#each profiles}}
+				            	{{#if network}}
+				            		{{#if $first}}
+				              		<a href="{{url}}" target="_blank">{{network}}</a>
+				              	{{else}}
+				              		 | <a href="{{url}}" target="_blank">{{network}}</a>
+				              	{{/if}}
+				              {{/if}}
+				            {{/each}}
+					      	</p>
+					      {{/if}}
 
 			        </div>
 			      </div>
