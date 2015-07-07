@@ -150,7 +150,7 @@ body > div > article > div > section:last-child {
     display:table-row;
 }
 .row div {
-    display:table-cell;
+    /*display:table-cell;*/
 }
 
 .content-cat {
@@ -163,10 +163,10 @@ body > div > article > div > section:last-child {
   
   font-size:0.975em;
   
-  text-align:center;
-  vertical-align:middle;
+  /*text-align:center;*/
+  /*vertical-align:middle;*/
 
-  padding-left:6.66%;
+  padding-left:1%;
   width:30%;
 }
 
@@ -179,7 +179,7 @@ body > div > article > div > section:last-child {
 }
 
 .content-text {
-  border-left:1px solid #e0e0e0;
+  /*border-left:1px solid #e0e0e0;*/
   transition: border 0.66s ease-in;
 }
 

@@ -175,18 +175,9 @@
 								<section class="content work-content">
           	{{/if}}
 			        <div class="row">
-			          <div class="content-cat big-text">
-			          	{{#if $first}}
-											Work	Experience
-			          	{{/if}}
-			          
-								 {{#if startDate}}
-										{{#if endDate}}
-			            		<p>{{startDate}} till {{endDate}}</p>
-			            	{{/if}}
-									{{/if}}
-
-			          </div>
+		          	{{#if $first}}
+										<div class="content-cat big-text">Work	Experience</div>
+		          	{{/if}}
 			          <div class="content-text work-listing education-listing">
 										{{#ifCond company '&&' position}}
 										{{#if $first}}
@@ -195,10 +186,16 @@
 					            <p>
 					          {{/if}}
 					            	{{#if website}}
-													<strong>{{position}}</strong> at <strong><a href="{{website}}">{{company}}:</a></strong>
+													<strong>{{position}}</strong> at <strong><a href="{{website}}">{{company}}</a></strong>
 												{{else}}
-					            		<strong>{{position}}</strong> at <strong>{{company}}:</strong>
+					            		<strong>{{position}}</strong> at <strong>{{company}}</strong>
 					            	{{/if}}
+
+					            	{{#if startDate}}
+													{{#if endDate}}
+						            		{{startDate}} till {{endDate}}
+						            	{{/if}}
+												{{/if}}
 					            </p>
 										{{/ifCond}}
 
@@ -263,26 +260,24 @@
 								<section class="content education-content">
 							{{/if}}
 				        <div class="row">
-				          <div class="content-cat big-text">
-
-				          	{{#if $first}}
-				            	Education
-										{{/if}}
-
-										{{#if startDate}}
-											{{#if endDate}}
-				            		<p>{{startDate}} till {{endDate}}</p>
-				            	{{/if}}
-										{{/if}}
-
-				          </div>
+			          	{{#if $first}}
+			            	<div class="content-cat big-text">Education</div>
+									{{/if}}
 				          <div class="content-text work-listing education-listing">
 										{{#if institution}}
 											{{#if $first}}
-						            <p class="heading" style="margin-top:2.35em;">{{institution}}</p>
-						            {{else}}
-						            <p class="heading">{{institution}}</p>
+						            <p class="heading" style="margin-top:2.35em;">{{institution}}
+						          {{else}}
+						            <p class="heading">{{institution}}
 						          {{/if}}
+
+						          {{#if startDate}}
+												{{#if endDate}}
+					            		{{startDate}} till {{endDate}}
+					            	{{/if}}
+											{{/if}}
+
+						          </p>
 										{{/if}}
 
 										{{#if area}}
