@@ -40,7 +40,7 @@
 					      <!-- PROFILES -->
 					      {{#if profiles.length}}
 					      	<p class="subtitle">
-					      		{{#each profiles}}
+					      		{{#foreach profiles}}
 				            	{{#if network}}
 				            		{{#if $first}}
 				              		<a href="{{url}}" target="_blank">{{network}}</a>
