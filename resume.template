@@ -286,14 +286,15 @@
 										{{/if}}
 
 										{{#if area}}
-											{{#if gpa}}
-				            		<p class="highlight">
-				            		{{#if studyType}}
-													{{studyType}}:
-				            		{{/if}}
-				            		<i>{{area}} ({{gpa}})</i>
-				            		</p>
-				            	{{/if}}
+			            		<p class="highlight">
+			            		{{#if studyType}}
+												{{studyType}}:
+			            		{{/if}}
+			            		<i>{{area}}
+			            		{{#if gpa}}
+			            			 ({{gpa}})
+			            		{{/if}}</i>
+			            		</p>
 										{{/if}}
 
 				          </div>
